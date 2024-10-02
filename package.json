@@ -8,25 +8,28 @@
   },
   "scripts": {
     "test": "npx playwright test",
-    "start": "node ./server/main.js"
+    "start": "node ./server/main.js",
+    "build": "npx hexo generate",
+    "serve": "npx hexo server"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kaw393939/is373_devops.git"
+    "url": "https://github.com/jar285/is373_devops.git"
   },
-  "author": "Keith Williams",
+  "author": "Jesus Rosario",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kaw393939/is373_devops/issues"
+    "url": "https://github.com/jar285/is373_devops/issues"
   },
-  "homepage": "https://github.com/kaw393939/is373_devops#readme",
+  "homepage": "https://github.com/jar285/is373_devops#readme",
+  "dependencies": {
+    "express": "^4.21.0"
+  },
   "devDependencies": {
     "@playwright/test": "^1.47.2",
     "@types/node": "^22.7.0",
-    "express": "^4.21.0",
-    "playwright": "^1.47.2"
-  },
-  "dependencies": {
-
+    "hexo": "^6.3.0",
+    "hexo-cli": "^4.3.0",
+    "wait-on": "^7.0.1"
   }
 }
